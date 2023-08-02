@@ -1,0 +1,254 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  
+  h1 {
+    color: rgb(9, 13, 79);
+    align-self: center;
+    font-size: 30;
+    padding-top: 5%;
+    padding-bottom: 1%;
+  }
+  
+  p, 
+  li {
+    font-size: 18px;
+    padding: 0.05%;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    align-self: center;
+    color: black;
+  }
+
+  a:hover{
+    color: rgba(4,97,172,255);
+  }
+
+  *{
+    font-family: sans-serif;
+  }
+  h1 {text-align: center;}
+  p {text-align: center;
+    padding: 2%;}
+
+  div {text-align: center;}
+  h2 {text-align: center;
+    padding: 1%;}
+
+
+  p7 {
+    text-align: center;
+    top: 0;
+    margin: 0;
+    color: rgba(4,97,172,255);
+    font-size: small;
+    line-height: 0;
+  }
+
+  ul {list-style-position: inside;}
+  li {text-align: left;
+      margin-left: 42.5%;
+      }
+
+
+  .button {
+border: none;
+border-radius: 13px;
+color: black;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.button1 {
+background-color: white; 
+color: black;
+}
+
+.button1:hover {
+/* background-color: #000000; */
+box-shadow:rgb(163, 162, 162) 2.5px 2.5px 10px 10px;
+}
+
+image {
+border-radius: 55px;
+}
+
+.headerFix {
+  background: rgba(203, 203, 203, 0.89);
+  color: rgb(255, 255, 255);
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}
+
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
+
+    .logo {
+      padding-left: 1040px;
+      padding-top: 2px;
+      margin: 0;
+      width: 200px;
+    }
+
+    .button1Home {
+      position: absolute;
+      top: 2px;
+      left: 40px;
+      padding: 5px;
+      color: rgba(4,97,172,255);
+      border-radius: 20px;
+      height: 30px;
+      width: 60px;
+      background: rgba(203, 203, 203, 0);
+  }
+
+    .button1Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+    }
+
+    .button2Home {
+      position: absolute;
+      top: 2px;
+      left: 3.5px;
+      padding: 5px;
+      color: rgba(4,97,172,255);
+      border-radius: 50px;
+      height: 30px;
+      width: 30px;
+      background: rgba(203, 203, 203, 0);
+      margin: 4px 2px; 
+  }
+    
+    .button2Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+    }
+
+
+
+
+#mySearch {
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  width: 20%;
+  height: 10%;
+  font-size: large;
+  background-color: lightgrey;
+  padding: 3px;
+}
+
+#mySearch:focus{
+outline: none;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.promptguide {
+  background: rgba(203, 203, 203, 0.89);
+  color: rgb(255, 255, 255);
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  top: 490px;
+  left: 1090px;
+  opacity: 0.8;
+}
+
+.criteria {
+  background: rgba(203, 203, 203, 0.89);
+  color: rgb(255, 255, 255);
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  top: 490px;
+  left: 10px;
+  opacity: 0.8;
+}
+
+
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .stickyPrompt {
+      position: fixed;
+      top: 100;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .stickyPrompt + .content {
+      padding-top: 102px;
+    }
+
+    .buttonPrompt {
+      position: absolute;
+      top: 2px;
+      left: 40px;
+      padding: 5px;
+      color: white;
+      border-radius: 20px;
+      width: 70px;
+      height: 70px;
+      background: rgba(4,97,172,255);
+  }
+
+    .buttonPrompt:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+    }
+
+    .buttonCriteria {
+      position: absolute;
+      top: 2px;
+      left: 0px;
+      padding: 5px;
+      color: white;
+      border-radius: 20px;
+      width: 70px;
+      height: 70px;
+      background: rgba(4,97,172,255);
+  }
+
+  .buttonCriteria:hover {
+    /* background-color: black; */
+    box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+  }
+
+    .namesGrid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+      padding-left: 10px;
+    }
