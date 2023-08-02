@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Copilots Inventory</title>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+
+  <div class = "headerFix" id="myHeader">
+    <script>
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      header.classList.add("sticky");
+    </script>
+
+<div class="logo">
+  <div>
+      <img src="./resources/names.png" style="height:40px;width:100px;padding: 0px;"/>
+  </div>
+</div>
+
+    <button onclick="location.href='./index.html'" class="button button1Home">
+      Home
+    </button>
+
+    <button onclick="history.back()" class="button button2Home">
+      <input type="image" id="myimage" style="height:20px;width:20px;" src="./resources/arrow.png">
+    </button>
+
+  </div>
+
+
+  <div class = "promptguide" id="promptguide">
+    <script>
+      var header = document.getElementById("promptguide");
+      var sticky = header.offsetTop;
+      header.classList.add("stickyPrompt");
+    </script>
+
+
+    <button onclick="location.href='./PromptEngineering.html'" class="button buttonPrompt">
+      Prompt Guide
+    </button>
+  </div>
+
+  <div class = "criteria" id="criteria">
+    <script>
+      var header = document.getElementById("criteria");
+      var sticky = header.offsetTop;
+      header.classList.add("stickyPrompt");
+    </script>
+
+    <button onclick="location.href='./resources/testingCriteria.pdf'" class="button buttonCriteria">
+      Testing Criteria
+    </button>
+  </div>
+
+</head>
+<body>
+    <h1>AI Copilots Inventory</h1>
+    <p>This page aims to give fast access to a growing database of available AI copilot solutions out there, as well as our conclusions after having tested these. The tools are separated into 5 main use categories.</p>
+    <h2>Search by category:</h2>
+    <button onclick="location.href='./InfoMerging.html'" class="button button1">
+      <input type="image" id="myimage" style="height:200px;width:210px;" src="./resources/testImage.png"/>
+      <div class="centered">Information Merging</div>
+    </button>
+    <button onclick="location.href='./StandardGenerative.html'" class="button button1">
+      <input type="image" id="myimage" style="height:200px;width:210px;" src="./resources/standardGen.jpg"/>
+      <div class="centered">Standard Generative</div>
+    </button>
+    <button class="button button1" onclick="location.href='./DataFormatting.html'">
+      <input type="image" id="myimage" style="height:200px;width:210px;" src="./resources/slidesImage.png"/>
+      <div class="centered">Data Formatting</div>
+    </button>
+    <button onclick="location.href='./Ideation.html'" class="button button1">
+      <input type="image" id="myimage" style="height:200px;width:210px;" src="./resources/lightBulb.jpg"/>
+      <div class="centered">Innovation & Ideation</div>
+    </button>
+    <button class="button button1" onclick="location.href='./Prototyping.html'">
+      <input type="image" id="myimage" style="height:200px;width:210px;" src="./resources/model.jpg"/>
+      <div class="centered">Prototyping</div>
+    </button>
+
+    <h2>Search the inventory directly:</h2>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        <br>
+
+
+
+
+
+      <!--
+        <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+          <span class="popuptext" id="myPopup">A Simple Popup!</span>
+        </div>
+        
+        <script>
+        // When the user clicks on div, open the popup
+        function myFunction2() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.toggle("show");
+        }
+        </script>
+        -->
+        
+
+
+
+
+
+        <ul id="myMenu">
+          <li><a href="./AI Intern.html">AI Intern</a></li>
+          <li><a href="./AI3D.html">AI 3D</a></li>
+          <li><a href="./Akkio.html">Akkio</a></li>
+          <li><a href="./Alpha3D.html">Alpha3D</a></li>
+          <li><a href="./Alphabet.html">Alphabet AI</a></li>
+          <li><a href="./Anthropic.html">Anthropic</a></li>
+          <li><a href="./Anyword.html">Anyword</a></li>
+          <li><a href="./Audible.html">Audible</a></li>
+          <li><a href="./Beautiful.ai.html">Beautiful.ai</a></li>
+          <li><a href="./ChatBA.html">Chat BA</a></li>
+          <li><a href="./ChatWithData.html">Chat With Data</a></li>
+          <li><a href="./Cohere.html">Cohere AI</a></li>
+          <li><a href="./Conjointly.html">Conjointly</a></li>
+          <li><a href="./Copy.ai.html">Copy.ai</a></li>
+          <li><a href="./Craft.html">Craft AI</a></li>
+          <li><a href="./DataBorg.html">DataBorg</a></li>
+          <li><a href="./DataGPTd.html">DataGPTd</a></li>
+          <li><a href="./DataRobot.html">Data Robot</a></li>
+          <li><a href="./DeckRobot.html">Deck Robot</a></li>
+          <li><a href="./Decktopus.html">Decktopus</a></li>
+          <li><a href="./DeepL.html">DeepL</a></li>
+          <li><a href="./Designs.html">Designs AI</a></li>
+          <li><a href="./Diib.html">Diib AI</a></li>
+          <li><a href="./Domo.html">Domo</a></li>
+          <li><a href="./DreamFusion.html">DreamFusion</a></li>
+          <li><a href="./Durable.html">Durable</a></li>
+          <li><a href="./EinsteinGPT.html">Einstein GPT</a></li>
+          <li><a href="./Elicit.html">Elicit</a></li>
+          <li><a href="./Fibery.html">Fibery AI</a></li>
+          <li><a href="./Fireflies.html">Fireflies</a></li>
+          <li><a href="./Flair.html">Flair</a></li>
+          <li><a href="./Frase.html">Frase</a></li>
+          <li><a href="./Genei.html">Genei</a></li>
+          <li><a href="./GitMind.html">GitMind AI</a></li>
+          <li><a href="./Glean.html">Glean</a></li>
+          <li><a href="./GlimmerAI.html">Glimmer AI</a></li>
+          <li><a href="./GPTOCR.html">GPTOCR</a></li>
+          <li><a href="./GPTPPT.html">GPT-PPT</a></li>
+          <li><a href="./Graphy.html">Graphy</a></li>
+          <li><a href="./Huggingface.html">HuggingFace</a></li>
+          <li><a href="./Hypotenuse.html">Hypotenuse AI</a></li>
+          <li><a href="./h2o.html">H2O AI</a></li>
+          <li><a href="./Idea Generator.html">Idea Generator</a></li>
+          <li><a href="./Ideanote.html">Ideanote</a></li>
+          <li><a href="./Inflection.html">Inflection</a></li>
+          <li><a href="./INK.html">INK</a></li>
+          <li><a href="./Jasper.html">Jasper</a></li>
+          <li><a href="./Kainoo.html">Kainoo</a></li>
+          <li><a href="./Kroma.AI.html">Kroma.AI</a></li>
+          <li><a href="./Lightricks.html">Lightricks</a></li>
+          <li><a href="./Looker.html">Looker</a></li>
+          <li><a href="./Magic3D.html">Magic3D</a></li>
+          <li><a href="./MagicalAI.html">Magical AI</a></li>
+          <li><a href="./MagicSlides.html">Magic Slides</a></li>
+          <li><a href="./Memorable.html">Memorable</a></li>
+          <li><a href="./Microsoft Copilot.html">Microsoft Copilot</a></li>
+          <li><a href="./MicrosoftExcelAI.html">Microsoft Excel AI</a></li>
+          <li><a href="./MicrosoftPowerBI.html">Microsoft Power BI</a></li>
+          <li><a href="./Midjourney.html">Midjourney</a></li>
+          <li><a href="./Mirage.html">Mirage</a></li>
+          <li><a href="./MonkeyLearn.html">MonkeyLearn</a></li>
+          <li><a href="./Nanonets.html">Nanonets</a></li>
+          <li><a href="./NotePD WriteWithJames.html">NotePD WriteWithJames</a></li>
+          <li><a href="./Notion.html">Notion</a></li>
+          <li><a href="./Noty.ai.html">Noty.ai</a></li>
+          <li><a href="./OpenAI.html">OpenAI (Chat GPT)</a></li>
+          <li><a href="./Outline.html">Outline</a></li>
+          <li><a href="./ParaphraseTool.html">ParaphraseTool</a></li>
+          <li><a href="./Penji.html">Penji</a></li>
+          <li><a href="./Pitch.html">Pitch</a></li>
+          <li><a href="./Point-E.html">Point-E</a></li>
+          <li><a href="./Poly.html">Poly</a></li>
+          <li><a href="./Polymer.html">Polymer</a></li>
+          <li><a href="./PresentationsAI.html">Presentations AI</a></li>
+          <li><a href="./Prezo.html">Prezo AI</a></li>
+          <li><a href="./Prowritingaid.html">Prowritingaid</a></li>
+          <li><a href="./QlikSense.html">Qlik Sense</a></li>
+          <li><a href="./QuestAI.html">Quest AI</a></li>
+          <li><a href="./Quillbot.html">Quillbot</a></li>
+          <li><a href="./Rationale.html">Rationale</a></li>
+          <li><a href="./REALLIFE3D.html">Real Life 3D</a></li>
+          <li><a href="./Rytr.html">Rytr</a></li>
+          <li><a href="./SafeGPT.html">SafeGPT</a></li>
+          <li><a href="./SAP.html">SAP BusinessObjects</a></li>
+          <li><a href="./Scalenut.html">Scalenut</a></li>
+          <li><a href="./SeamlessStudio.html">Seamless Studio</a></li>
+          <li><a href="./Seenapse.html">Seenapse</a></li>
+          <li><a href="./SEO.ai.html">SEO.AI</a></li>
+          <li><a href="./Silatus.html">Silatus</a></li>
+          <li><a href="./Simplified.html">Simplified AI</a></li>
+          <li><a href="./Sisense.html">Sisense</a></li>
+          <li><a href="./Slidebean.html">Slidebean</a></li>
+          <li><a href="./SlidesAI.html">Slides AI</a></li>
+          <li><a href="./Sloyd.html">Sloyd</a></li>
+          <li><a href="./Smartcopy.html">Smart Copy AI</a></li>
+          <li><a href="./Smodin.html">Smodin</a></li>
+          <li><a href="./Stability.html">Stability</a></li>
+          <li><a href="./String.html">String</a></li>
+          <li><a href="./SuperAI.html">Super AI</a></li>
+          <li><a href="./Synthesis.html">Synthesis</a></li>
+          <li><a href="./Tableau.html">Tableau</a></li>
+          <li><a href="./Textmetrics.html">Textmetrics</a></li>
+          <li><a href="./Tome.html">Tome</a></li>
+          <li><a href="./UnionX.html">UnionX</a></li>
+          <li><a href="./Universal Data Generator.html">Universal Data Generator</a></li>
+          <li><a href="./Vizcom.html">Vizcom</a></li>
+          <li><a href="./whimsical.html">Whimsical AI</a></li>
+          <li><a href="./Wordtune.html">Wordtune</a></li>
+          <li><a href="./Word.html">Word AI</a></li>
+          <li><a href="./WriteAI.html">Write AI</a></li>
+          <li><a href="./Writecream.html">Writecream</a></li>
+          <li><a href="./WriteSonic.html">WriteSonic</a></li>
+          <li><a href="./ZIAAI.html">ZIA AI</a></li>
+
+        </ul>
+
+    
+    <script>
+      function myFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("mySearch");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myMenu");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+        </script>
+
+</body>
+</html>

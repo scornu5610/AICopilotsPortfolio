@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    * {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+    h1{text-align: center;
+      color: rgb(9, 13, 79);
+      font-size: 30;
+      margin: 0;
+      padding: 0;
+    }
+
+    title{
+      padding: 0;
+      margin: 0;
+    }
+
+    h3{
+      text-align: center;
+      padding: 2%;
+      }
+
+
+    p{
+      text-align: center;
+    }
+
+    p1{
+      text-align: center;
+      font-style: italic;
+      padding-top: 5px;
+      color: rgba(4,97,172);
+      }
+
+    h4{
+      text-align: center;
+      padding: 1%;
+      margin: 2%;
+      font-size: small;
+    }
+
+    h5{
+      text-align: center;
+      padding: 1%;
+    }
+
+    p2{
+      font-size: smaller;
+    }
+
+    .testResultsContainer{
+      padding: 1%;
+    }
+
+    .button {
+      border: none;
+      color: black;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px; 
+      margin-bottom: 20px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    button1 {
+      background-color: white; 
+      color: black;
+    }
+
+    .button1:hover {
+      box-shadow:rgb(163, 162, 162) 2.5px 2.5px 10px 10px;
+
+    }
+
+    .container{
+      background-color: rgb(8, 8, 64);
+      color: white;
+      /* margin: 5%; */
+      margin-top: 2%;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 3%;
+      overflow: hidden;
+      align-self: flex-start;
+      border-radius: 20px;
+    }
+
+    
+    .headerFix {
+      background: rgba(203, 203, 203, 0.89);
+      color: rgb(255, 255, 255);
+      font-size: small;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
+
+    
+
+    .button1Home {
+        position: absolute;
+        top: 2px;
+        left: 40px;
+        padding: 5px;
+        color: rgba(4,97,172,255);
+        border-radius: 20px;
+        height: 30px;
+        width: 60px;
+        background: rgba(203, 203, 203, 0);
+    }
+
+    .button2Home {
+        position: absolute;
+        top: 2px;
+        left: 3.5px;
+        padding: 5px;
+        color: rgba(4,97,172,255);
+        border-radius: 50px;
+        height: 30px;
+        width: 30px;
+        background: rgba(203, 203, 203, 0);
+    }
+
+    .button1Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+
+    }
+
+    .button2Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+
+    }
+
+    .morePadding {
+      margin-top: 3%;
+      margin-bottom: none;
+    }
+
+    .logo {
+      padding-left: 1040px;
+      padding-top: 2px;
+      margin: 0;
+      width: 200px;
+    }
+
+    p7 {
+    text-align: center;
+    top: 0;
+    margin: 0;
+    color: rgba(4,97,172,255);
+    font-size: small;
+    line-height: 0;
+  }
+
+  .namesGrid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+      padding-left: 10px;
+    }
+  </style>
+
+  <title>Deck Robot</title>
+
+  <div class = "headerFix" id="myHeader">
+    <script>
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      header.classList.add("sticky");
+    </script>
+
+<div class="logo">
+  <div>
+      <img src="./resources/names.png" style="height:40px;width:100px;padding: 0px;"/>
+  </div>
+</div>
+    
+    <button onclick="location.href='./index.html'" class="button button1Home">
+      Home
+    </button>
+
+    <button onclick="history.back()" class="button button2Home">
+      <input type="image" id="myimage" style="height:20px;width:20px;" src="./resources/arrow.png">
+    </button>
+  </div>
+  
+  <br>
+
+  <input type="image" id="myimage" style="height:100px;width:300px;padding-top: 50px; padding-bottom: 10px;" src="./resources/deckrobot_logo.jfif"/>
+  
+  <h1>Deck Robot</h1>
+  
+  <p1>Beautifying slides</p1>
+  
+  <br>
+
+</head>
+
+<div class="container">
+  <body>
+    <h3>
+        Useful for:
+    </h3>
+    <p>(No specific uses for this department)</p>
+</div>
+
+<div class="container">
+  <body>
+    <h3>
+        Our impression:
+    </h3>
+  <p>
+    Doesn't have AI-assisted slide generation, won't give the efficiency gains we're looking for.
+  </p>
+</div>
+
+<br>
+<h4>
+  For more detailed information about other tools, feel free to consult the full test results:
+  <br>
+  <div class = "testResultsContainer">
+    <button class="button button1" onclick="location.href='./CompleteListOfToolsEvaluatedHTML.htm'">
+    <p2>Test Results</p2>
+    </button>
+  </div>
+</h4>
+
+
+</body>
+</html>

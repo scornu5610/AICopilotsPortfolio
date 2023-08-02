@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+* {
+    font-family: sans-serif;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+  }
+
+  
+
+h1{text-align: center;
+  color: rgb(9, 13, 79);
+  font-size: 30;
+  margin: 0;
+  padding: 0;
+}
+
+ul {list-style-position: inside;
+color: white}
+  li {text-align: left;
+      margin-left: 25%;
+      margin-right: 25%
+      }
+
+      ul2 {list-style-position: inside;
+        color: white;
+      }
+
+      li2 {text-align: left;
+      margin-left: 20%;
+      }
+
+
+title{
+  padding: 0;
+  margin: 0;
+}
+
+h3{
+  text-align: center;
+  padding: 2%;
+  }
+
+
+p{
+  text-align: center;
+  color: white;
+}
+
+p1{
+  text-align: center;
+  padding-top: 5px;
+  color: white;
+  }
+
+  p2{
+    text-align: left;
+    color: white;
+  }
+
+  p5{
+    text-align: center;
+    font-size: 16px;
+  font-style: italic;
+  padding-top: 5px;
+  color: rgba(4,97,172);
+  }
+
+h4{
+  text-align: center;
+  padding: 1%;
+  margin: 2%;
+  font-size: small;
+}
+
+h5{
+  text-align: center;
+  padding: 1%;
+}
+
+
+
+.testResultsContainer{
+  padding: 1%;
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; 
+  margin-bottom: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button1 {
+  background-color: white; 
+  color: black;
+}
+
+.button1:hover {
+  box-shadow:rgb(163, 162, 162) 2.5px 2.5px 10px 10px;
+
+}
+
+.button1Home {
+      position: absolute;
+      top: 2px;
+      left: 40px;
+      padding: 5px;
+      color: rgba(4,97,172,255);
+      border-radius: 20px;
+      height: 30px;
+      width: 60px;
+      background: rgba(203, 203, 203, 0);
+  }
+
+    .button1Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+    }
+
+    .button2Home {
+      position: absolute;
+      top: 2px;
+      left: 3.5px;
+      padding: 5px;
+      color: rgba(4,97,172,255);
+      border-radius: 50px;
+      height: 30px;
+      width: 30px;
+      background: rgba(203, 203, 203, 0);
+      margin: 4px 2px; 
+  }
+    
+    .button2Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+    }
+
+.container{
+  background-color: rgb(8, 8, 64);
+  color: white;
+  /* margin: 5%; */
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  overflow: hidden;
+  align-self: flex-start;
+  border-radius: 20px;
+}
+
+.container3{
+  background-color: rgb(16, 16, 121);
+  color: white;
+  /* margin: 5%; */
+  
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left:5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  overflow: hidden;
+  align-self: flex-start;
+  border-radius: 20px;
+}
+
+.container2{
+  margin-left: 1.2%;
+  margin-right: 5%;
+  
+}
+
+.container4{
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.headerFix {
+  background: rgba(203, 203, 203, 0.89);
+  color: rgb(255, 255, 255);
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}
+
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
+
+    
+
+  h2{
+      text-align: center;
+  }
+
+  .logo {
+      padding-left: 1040px;
+      padding-top: 2px;
+      margin: 0;
+      width: 200px;
+    }
+
+    p7 {
+      text-align: center;
+      top: 0;
+      margin: 0;
+      color: rgba(4,97,172,255);
+      font-size: small;
+      line-height: 0;
+  }
+
+    .namesGrid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+      padding-left: 10px;
+  }
+</style>
+
+<br>
+<br>
+<br>
+<title>Prompt Engineering</title>
+
+<div class = "headerFix" id="myHeader">
+  <script>
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    header.classList.add("sticky");
+  </script>
+
+    <div class="logo">
+      <div>
+          <img src="./resources/names.png" style="height:40px;width:100px;padding: 0px;"/>
+      </div>
+    </div>
+  
+  <button onclick="location.href='./index.html'" class="button button1Home">
+    Home
+  </button>
+
+  <button onclick="history.back()" class="button button2Home">
+    <input type="image" id="myimage" style="height:20px;width:20px;" src="./resources/arrow.png">
+  </button>
+</div>
+
+<br>
+<h1>Prompt Engineering Guide</h1>
+<br>
+
+<div class="container 4">
+    <br>
+<div class = "container2">
+    <p1>Prompt engineering refers to the tailoring&nbsp;your communication with the tool&nbsp;to&nbsp;make the output more&nbsp;relevant&nbsp;and useful for you.&nbsp;There is a&nbsp;whole&nbsp;science to prompt engineering, but on a basic level it is important to know that a prompt is composed of 4 elements:&nbsp;</p1>
+</div>
+<br>
+    <ul id="myMenu">
+        <li><p1>Instruction: A specific task or instruction you want the model to perform&nbsp;</p1></li>
+        <br>
+            <li><p1>Context: External information or&nbsp;additional&nbsp;context that can steer the model to better responses&nbsp;</p1></li>
+            <br>
+            <li><p1>Input data: The input or question we are interested in finding a response for&nbsp;</p1></li>
+            <br>
+            <li><p1>Output indicator: The type or format of the output&nbsp;</p1></li>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+    <div class="container2">
+    <p1>Note: It is not always necessary to have all 4 elements present, this will depend on the type of task you are trying to achieve. In addition to these 4 elements, it is also useful to know the following facts:</p1>
+</div>
+<br>
+<ul id="myMenu">
+        <li><p1>Large language models (LLMs) have parameters which can fine tune how the model behaves. In particular, one of the most useful parameters is temperature, which impacts how deterministic the model is the lower the temperature, the more predictable the output is, the higher it is the more random the outputs will be (better for creative tasks, worse for purely factual queries).</p1></li>
+        <br>
+        <li><p1>Setting parameters is as simple as starting off a prompt with temperature: 0.</p1></li>
+        <br>
+    
+</ul>
+<br>
+<br>
+<br>
+<div class="container2">
+<p1>If you are interested in learning more about this, feel free to read through this useful simple guide:<br><a href="https://www.promptingguide.ai/" target="_blank" rel="noreferrer noopener">Prompt Engineering Guide | Prompt Engineering Guide (promptingguide.ai)</a></p1>
+   </div>
+   </div>
+<br>
+<br>
+<br>
+<div class="container4">
+    <p5><b>Below are some samples of prompts that can be used to carry out tasks in Categories 2-4 (the ones we were able to test most thoroughly):</b></p5>
+</div>
+<div class="container">
+    <br>
+    <h2>Category 2 - Standard Generative</h2>
+    <br>
+    <p2><b>Task:</b> Writing a project brief</p2>
+    <br>
+    <p2><b>Tools:</b> Jasper, Craft, Designs.AI</p2>
+    <br>
+    <p2><b>Method:</b> Instructing the tool as to what you want it to achieve</p2>
+    <br>
+    <br>
+    <div class="container3">
+        <br>
+    <p2><b>Prompt:</b></p2>
+        <br>
+        <br>
+        <div class="container2">
+    <p2>Context: You are a member of the consumer centric innovation team at Philip Morris International who has just hired a summer intern to work on a research project. The aim of the project is to find and evaluate AI tools which could help the innovation team with their work. This intern does not know anything about the company and will need guidance regarding the stages of the project, as well as important criteria to consider.</p2>
+    <br>
+    <br>
+    <p2>Instruction: Please write this brief.</p2>
+    <br>
+    <br>
+    <p2>Output indicator: Please organize the brief into the following sections: Introduction, Product Objectives (give an overview of the task and the objectives), Use Cases (give 10 concrete use cases specific to the innovation pipeline, and consider potential issues we might have to watch out for), Project Management (the main tasks, and the evaluation criteria which will be considered while assessing the suitability of each AI tool), and Your Task (including project deliverables).</p2>
+    <br>
+    <br>
+    </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <p2><b>Task:</b> Writing a project brief</p2>
+    <br>
+    <p2><b>Tools:</b> Simplified AI, Copy, Outline, Silatus.</p2>
+    <br>
+    <p2><b>Method:</b> Slightly different approach when you are using a continue writing function. In this case you need to start the task off and let the AI tool continue it.</p2>
+    <br>
+    <br>
+    <div class="container3">
+        <br>
+    <p2><b>Prompt:</b></p2>
+        <br>
+        <br>
+        <div class="container2">
+    <p2>Context: I am a member of the consumer centric innovation team at Philip Morris International who has just hired a summer intern to work on a research project. The aim of the project is to find and evaluate AI tools which could help the innovation team with their work. This intern does not know anything about the company and will need guidance regarding the stages of the project, as well as important criteria to consider.</p2>
+    <br>
+    <br>
+    <p2>Output indicator: I will organize the brief into the following sections: Introduction, Product Objectives (give an overview of the task and the objectives), Use Cases (give 10 concrete use cases specific to the innovation pipeline, and consider potential issues we might have to watch out for), Project Management (the main tasks, and the evaluation criteria which will be considered while assessing the suitability of each AI tool), and Your Task (including project deliverables).</p2>
+    <br>
+    <br>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <br>
+        <h2>Category 3 - Data Formatting</h2>
+        <br>
+        <p2><b>Tasks:</b> Extracting key information from text, synthesizing meeting transcripts, summarizing important points covered in a presentation (ignoring unnecessary additional information)</p2>
+        <br>
+        <p2><b>Tools:</b> Craft, Kroma</p2>
+        <br>
+        <p2><b>Method:</b> Prompts in this category are almost entirely comprised of the instruction, context is not as relevant, as you tend to feed it the necessary information and get it to do something with it.</p2>
+        <br>
+        <br>
+        <div class="container3">
+            <br>
+        <p2><b>Prompt:</b></p2>
+            <br>
+            <br>
+            <div class="container2">
+        <p2>Context: You are a member of the consumer centric innovation team at Philip Morris International who has just hired a summer intern to work on a research project. The aim of the project is to find and evaluate AI tools which could help the innovation team with their work. This intern does not know anything about the company and will need guidance regarding the stages of the project, as well as important criteria to consider.</p2>
+        <br>
+        <br>
+        <p2>Instruction: Can you summarize the above meeting transcript, outlining the key points discussed.</p2>
+        <br>
+        <br>
+        <p2>Instruction: Can you list the key facts discussed in the presentation transcript above.</p2>
+        <br>
+        <br>
+        <p2>Instruction: Can you extract the key points from this article.</p2>
+        <br>
+        <br>
+        </div>
+        </div>
+        </div>
+        <br>
+
+
+
+        <div class="container">
+            <br>
+            <h2>Category 4 - Innovation & Ideation</h2>
+            <br>
+            <p2><b>Tasks:</b> Brainstorming, idea generation (tests attempted to get tools to come up with ideas for CCX strategy)</p2>
+            <br>
+            <p2><b>Tools:</b> Whimsical AI, Fibery AI, Idea Generator, Ideanote, Taskade, GitMind, Seenapse</p2>
+            <br>
+            <p2><b>Method:</b> Giving the tool enough context about the team's work, as well as the categories to brainstorm around.</p2>
+            <br>
+            <br>
+            <div class="container3">
+                <br>
+            <p2><b>Prompt:</b></p2>
+                <br>
+                <br>
+                <div class="container2">
+            <p2>Context: You are working in the innovation team working on the future of smoke-free devices. You are particularly interested in heat-not-burn devices, such as the IQOS product. You are particularly interested in improving connectivity, interaction, systems and infrastructure and device data of smoke free devices. You are trying to generate ideas for how to do this.</p2>
+            <br>
+            <br>
+            <p2>Instruction: What approaches would you take for each category?</p2>
+            <br>
+            <br>
+            <p2>Output indicator: Please give 30 ideas.</p2>
+            <br>
+            <br>
+            </div>
+            </div>
+            <br>
+            <div class="container3">
+                <br>
+            <p2>Further Prompts Used:</p2>
+                <br>
+                <br>
+                <div class="container2">
+            <p2>For Whimsical AI, Fibery AI, Taskade, GitMind: Elaborate on new revenue spaces and data security.</p2>
+            <br>
+            <br>
+            <p2>For Seenapse: Can you give 10 more ideas for connectivity/ interaction/ new possible revenue spaces, what other technologies could you integrate to improve the user experience, can you give some more ideas in terms of the retail experience, can you elaborate on data security.</p2>
+            <br>
+            <br>
+            </div>
+            </div>
+            </div>
+    
+    
+    
+    </head>
+    </html>

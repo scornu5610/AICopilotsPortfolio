@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <style>
+    * {
+      font-family: sans-serif;
+      text-align: center;
+    }
+    h1{text-align: center;
+      color: rgb(9, 13, 79);
+      font-size: 30;
+      padding-top: 1%;
+    }
+    h2 {
+      text-align: center;
+      color: rgba(4,97,172,255);
+      font-size: 10;
+      
+    }
+    h3{text-align: center;
+      padding: 10px;}
+    p{text-align: center;}
+    p1{text-align: center;
+        font-style: italic;}
+    p2{text-align: center;
+    color: white;}
+    h4{text-align: center;}
+    h5{text-align: center;}
+
+    .button {
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5%;
+}
+
+.button:hover{ 
+     box-shadow:rgb(163, 162, 162) 2.5px 2.5px 10px 10px;
+   }
+   
+.button1 {
+    border: none;
+    color: white;
+    background-color: rgba(4,97,172);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5%;
+  }
+
+
+.container{
+background-color: rgb(8, 8, 64);
+color: white;
+/* padding-top: 0.5%;
+padding-bottom: 0.5%; */
+/* border-radius: 5%; */
+margin: 5%;
+padding: 0.5%;
+padding-left: 5%;
+padding-right: 5%;
+border-radius: 25px;
+overflow: hidden;
+align-self: flex-start;
+padding-bottom: 3%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  gap: 10px;
+  padding: 10px;
+}
+
+.headerFix {
+  background: rgba(203, 203, 203, 0.89);
+  color: rgb(255, 255, 255);
+  font-size: small;
+  padding: 0;
+  margin: 0;
+}
+
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
+
+
+
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .subheaders{
+      text-align: center;
+      color: rgba(4,97,172,255);
+      font-size: 10;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .button {
+      border: none;
+      color: black;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px; 
+      margin-bottom: 20px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    .button1Home {
+      position: absolute;
+      top: 2px;
+      left: 40px;
+      padding: 5px;
+      color: rgba(4,97,172,255);
+      border-radius: 20px;
+      height: 30px;
+      width: 60px;
+      background: rgba(203, 203, 203, 0);
+  }
+
+    .button1Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+
+    }
+
+    .button2Home {
+      position: absolute;
+      top: 2px;
+      left: 3.5px;
+      padding: 5px;
+      color: rgba(4,97,172,255);
+      border-radius: 50px;
+      height: 30px;
+      width: 30px;
+      background: rgba(203, 203, 203, 0);
+      margin: 4px 2px; 
+  }
+    
+    .button2Home:hover {
+      /* background-color: black; */
+      box-shadow:rgb(163, 162, 162) 0.5px 0.5px 5px 5px;
+    }
+
+    
+    a {
+      text-decoration: underline;
+      font-size: small;
+      align-self: center;
+      color: white;
+      text-align: center;
+    }
+
+    
+
+    ol {list-style-position: inside;}
+    li {text-align: center;
+      margin-left: 0;
+      padding: 5px;
+      }
+
+      .crop {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+
+    .crop img {
+        width: 100%;
+        height: 300px;
+        margin: -25px 0 0 0px;
+        border-radius: 0;
+    }
+    
+
+    .logo {
+      padding-left: 1040px;
+      padding-top: 2px;
+      margin: 0;
+      width: 200px;
+    }
+
+    p7 {
+    text-align: center;
+    top: 0;
+    margin: 0;
+    color: rgba(4,97,172,255);
+    font-size: small;
+    line-height: 0;
+  }
+
+  .namesGrid{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 10px;
+      padding-left: 10px;
+    }
+
+</style>
+
+
+  <title>data formatting landing page</title>
+
+  <div class = "headerFix" id="myHeader">
+    <script>
+      var header = document.getElementById("myHeader");
+      var sticky = header.offsetTop;
+      header.classList.add("sticky");
+    </script>
+
+<div class="logo">
+  <div>
+      <img src="./resources/names.png" style="height:40px;width:100px;padding: 0px;"/>
+  </div>
+</div>
+    
+    <button onclick="location.href='./index.html'" class="button button1Home">
+      Home
+    </button>
+
+    <button onclick="history.back()" class="button button2Home">
+      <input type="image" id="myimage" style="height:20px;width:20px;" src="./resources/arrow.png">
+    </button>
+
+  </div>
+  
+  <div class="crop">
+    <img src="./resources/databanner.jpg" alt="background">
+  </div>
+  
+  <h1>Data Formatting</h1>
+  <br>
+  <div class = "subheaders"><i>Information synthesis, AI generated presentations</i></div>
+</head>
+
+<div class = "grid-container">
+  <div class="container">
+  <body>
+    <h3>Recommended Tools</h3>
+    <h4>For presentations</h4>
+    <ol id="myMenu">
+      <li><a href="./Beautiful.ai.html">Beautiful.ai</a></li>
+    </ol>
+    <h4>For long-form text (transcripts, articles, etc)</h4>
+    <ol id="myMenu">
+      <li><a href="./Craft.html">Craft</a></li>
+    </ol>
+  </div>
+  <div class="container">
+      <body>
+        <h3>All Tools</h3>
+        <ol id="myMenu">
+          <li><a href="./Audible.html">Audible</a></li>
+          <li><a href="./Beautiful.ai.html">Beautiful AI</a></li>
+          <li><a href="./ChatBA.html">Chat BA</a></li>
+          <li><a href="./Craft.html">Craft</a></li>
+          <li><a href="./DeckRobot.html">DeckRobot</a></li>
+          <li><a href="./Decktopus.html">Decktopus</a></li>
+          <li><a href="./Fireflies.html">Fireflies</a></li>
+          <li><a href="./Frase.html">Frase</a></li>
+          <li><a href="./Genei.html">Genei</a></li>
+          <li><a href="./GlimmerAI.html">Glimmer AI</a></li>
+          <li><a href="./Kroma.AI.html">Kroma</a></li>
+          <li><a href="./Magical.html">Magical AI</a></li>
+          <li><a href="./MagicSlides.html">Magic Slides</a></li>
+          <li><a href="./Noty.ai.html">Noty AI</a></li>
+          <li><a href="./ParaphraseTool.html">ParaphraseTool</a></li>
+          <li><a href="./Penji.html">Penji</a></li>
+          <li><a href="./Pitch.html">Pitch</a></li>
+          <li><a href="./Prezo.html">Prezo AI</a></li>
+          <li><a href="./PresentationsAI.html">Presentations AI</a></li>
+          <li><a href="./QuestAI.html">Quest AI</a></li>
+          <li><a href="./Quillbot.html">Quillbot</a></li>
+          <li><a href="./Slidebean.html">Slidebean</a></li>
+          <li><a href="./SlidesAI.html">SlidesAI</a></li>
+          <li><a href="./Smodin.html">Smodin</a></li>
+          <li><a href="./SuperAI.html">Super AI</a></li>
+          <li><a href="./Tome.html">Tome</a></li>
+          <li><a href="./Wordtune.html">Wordtune</a></li>
+        </ol>
+  </div>
+</div>
+
+</body>
+</html>
